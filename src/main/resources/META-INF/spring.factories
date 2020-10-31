@@ -1,0 +1,4 @@
+# Application Listeners
+org.springframework.context.ApplicationListener=com.jin.gateway.downstream.listener.MyApplicationListener
+
+org.springframework.boot.env.EnvironmentPostProcessor=com.jin.gateway.downstream.listener.MyEnvironmentPostProcessor

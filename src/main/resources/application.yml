@@ -1,3 +1,36 @@
 server:
-  port: 9080
-debug: true
+  port: 9090
+  http2:
+    enabled: true
+debug: false
+
+user:
+  name1: zhangsan
+
+person:
+  name: lisi
+  age: 10
+secret:
+  property: ENC(l6taLcDW8lleF1FwVDdCy1UoVitWn7O66C5s6SIDoLKb4rimojqaebKjsMEN3QU1)
+
+jasypt:
+  encryptor:
+    password: abc321
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    enabled-by-default: false
+#        exclude: '*'
+
+myconditional:
+  name: "zhangsan"
+spring:
+  profiles:
+    active: DEV
+  aop:
+    proxy-target-class: false
+
+
+
